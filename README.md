@@ -39,7 +39,7 @@ docker run --gpus all --rm -p 8000:8000 -p 8001:8001 -p 8002:8002 -v ${PWD}/mode
 - If the process goes well, you should see the following outputs in the terminal:
 
 ![Models Status](images/Models%20status_ready.png)
-![Models Backend_Status](images/Models%20Backend.png)
+![Models Backend_Status](images/Models_Backend.png)
 
 - launch an interactive shell within a Docker container based on the Triton server (allows you to access and work within the Triton server environment)
 ```
