@@ -36,6 +36,11 @@ model_repository
 ```
 docker run --gpus all --rm -p 8000:8000 -p 8001:8001 -p 8002:8002 -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:<xx.yy>-py3 tritonserver --model-repository=/models
 ```
+- If the process goes well, you should see the following outputs in the terminal:
+
+![Models Status](images/Models%20status_ready.png)
+![Models Backend_Status](images/Models_Backend.png)
+
 - launch an interactive shell within a Docker container based on the Triton server (allows you to access and work within the Triton server environment)
 ```
 docker run -it --rm --net=host -v ${PWD}:/workspace/ nvcr.io/nvidia/tritonserver:<yy.mm>-py3-sdk bash
@@ -45,8 +50,9 @@ docker run -it --rm --net=host -v ${PWD}:/workspace/ nvcr.io/nvidia/tritonserver
 - Once the Triton server is running, use a Triton client compatible with your chosen backend framework (ONNX in this case) to send classification requests.
 - To view an example client notebook, refer to the [rn50_client.ipynb](rn50_client.ipynb) file.
 
-## Conclusion
+## In Short
 By following these steps, you should be able to successfully deploy the ResNet50 model using the Triton server. 
+
 
 For more information and advanced configurations, refer to the Triton documentation and resources available on the NVIDIA Developer website.
 
