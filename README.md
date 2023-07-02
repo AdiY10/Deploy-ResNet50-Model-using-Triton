@@ -19,14 +19,16 @@ This guide provides step-by-step instructions for establishing an inference infr
 
 ### Step 3: Configure and Run Triton Server
 - To use Triton, you will need to build a model repository that follows a specific structure. Here's an example structure of a Triton model repository:
-  model_repository/
-  └── resnet50/
-      ├── 1/
-      │   ├── model.onnx
-      │   └── config.pbtxt
-      └── 2/
-          ├── model.onnx
-          └── config.pbtxt
+```
+model_repository
+|
++-- resnet
+    |
+    +-- config.pbtxt
+    +-- 1
+        |
+        +-- model.onnx
+```
 
 - Open a terminal and navigate to the directory where you installed the Triton server containers.
 - Start the Triton server with the appropriate command, specifying the model repository and other necessary configurations.
