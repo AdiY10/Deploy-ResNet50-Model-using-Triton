@@ -36,10 +36,11 @@ model_repository
 ```
 docker run --gpus all --rm -p 8000:8000 -p 8001:8001 -p 8002:8002 -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:<xx.yy>-py3 tritonserver --model-repository=/models
 ```
-- If the process goes well, you should see the following outputs in the terminal:
+- If the process goes well, you should see the following output in the terminal:
+  
 ![Model Status](images/Model_status_resnet50.png)
 
-or in case of multiple models:
+- or in case of multiple models:
 
 ![Models Status](images/Models%20status_ready.png)
 ![Models Backend_Status](images/Models_Backend.png)
