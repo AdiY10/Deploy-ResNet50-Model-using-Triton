@@ -50,8 +50,9 @@ docker run -it --rm --net=host -v ${PWD}:/workspace/ nvcr.io/nvidia/tritonserver
 - Once the Triton server is running, use a Triton client compatible with your chosen backend framework (ONNX in this case) to send classification requests.
 - To view an example client notebook, refer to the [rn50_client.ipynb](rn50_client.ipynb) file.
 
-## Conclusion
+## In Short
 By following these steps, you should be able to successfully deploy the ResNet50 model using the Triton server. 
+
 
 For more information and advanced configurations, refer to the Triton documentation and resources available on the NVIDIA Developer website.
 
