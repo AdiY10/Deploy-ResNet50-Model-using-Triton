@@ -9,12 +9,12 @@ This guide provides step-by-step instructions for establishing an inference infr
 4. Internet access.
 
 ## Steps to Deploy ResNet50 Model using Triton
-1. Download Triton Client and Server Containers
+1. Download Triton Containers
 2. Download ResNet50 Model Weights
 3. Configure and Run Triton Server
 
-### Step 1: Download Triton Client and Server Containers
-- Go to the [NGC registry]((https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver)) and download the Triton client and server containers compatible with your GPU.
+### Step 1: Download Triton Containers
+- Go to the [NGC registry]((https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver)) and download the Triton containers compatible with your GPU.
 - Follow the documentation provided by Triton to install and configure the containers.
 
 ### Step 2: Download ResNet50 Model Weights
