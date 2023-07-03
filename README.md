@@ -14,8 +14,12 @@ This guide provides step-by-step instructions for establishing an inference infr
 3. Configure and Run Triton Server
 
 ### Step 1: Download Triton Containers
-- Go to the [NGC registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver) and download the Triton containers compatible with your GPU.
+- Go to the [NGC registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver) and download the Triton containers compatible with your GPU. (change <xx.yy> to the version you need)
+```
+docker pull nvcr.io/nvidia/tritonserver:<xx.yy>-py3
+```
 - Follow the documentation provided by Triton to install and configure the containers.
+
 
 ### Step 2: Download ResNet50 Model Weights
 - Download the [ResNet50 model weights](https://github.com/onnx/models/tree/main/vision/classification/resnet) in the ONNX format from.
