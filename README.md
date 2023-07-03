@@ -14,7 +14,7 @@ This guide provides step-by-step instructions for establishing an inference infr
 3. Configure and Run Triton Server
 
 ### Step 1: Download Triton Containers
-- Go to the [NGC registry]((https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver)) and download the Triton containers compatible with your GPU.
+- Go to the [NGC registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver) and download the Triton containers compatible with your GPU.
 - Follow the documentation provided by Triton to install and configure the containers.
 
 ### Step 2: Download ResNet50 Model Weights
