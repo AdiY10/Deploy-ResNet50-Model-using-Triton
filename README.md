@@ -12,6 +12,7 @@ This guide provides step-by-step instructions for establishing an inference infr
 1. Download Triton Containers
 2. Download ResNet50 Model Weights
 3. Configure and Run Triton Server
+4. Configure a Triton Client to Query the Server
 
 ### Step 1: Download Triton Containers
 - Go to the [NGC registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver) and download the Triton containers compatible with your GPU. (change <xx.yy> to the version you need)
